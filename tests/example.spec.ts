@@ -17,6 +17,8 @@ test('has title', async ({ page }) => {
   await expect(page.locator('.logo-font').first()).toHaveText('conduit');
 });
 
+
+// browser is still opened after running testcases 
 test.afterEach(async ({ page }) => {
   await page.pause();
 });
